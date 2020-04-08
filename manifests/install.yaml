@@ -11733,6 +11733,8 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: tmp
+      securityContext:
+        runAsNonRoot: true
       serviceAccountName: argo-rollouts
       volumes:
       - emptyDir: {}
